@@ -10,8 +10,6 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
-
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
@@ -21,6 +19,8 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+gem 'rspec-activemodel-mocks', '~> 1.0', '>= 1.0.3'
+
 group :development, :test do
   gem 'rspec-rails', '~> 3.4'
   gem 'byebug'
@@ -29,7 +29,7 @@ end
 gem 'rails_12factor', group: :production
 
 group :test do
-  gem 'capybara', '~> 2.1.0'
+  gem 'capybara', '~> 2.3.0'
 end
 
 group :development do
