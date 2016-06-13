@@ -26,6 +26,8 @@ group :development, :test do
   gem 'byebug'
 end
 
+gem 'rails_12factor', group: :production
+
 group :test do
   gem 'capybara', '~> 2.1.0'
 end
